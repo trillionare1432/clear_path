@@ -1,0 +1,1072 @@
+# CLEARPATH AI — COMPLETE EXISTING APPLICATION UPGRADE
+
+## PRIMARY INSTRUCTION: UPGRADE, DO NOT REBUILD
+
+You are working on my existing application, ClearPath AI, which has already been developed in Google AI Studio.
+
+Your task is to deeply inspect, improve, extend and complete the EXISTING application.
+
+**DO NOT create a new application from scratch. DO NOT replace the existing project. DO NOT unnecessarily change its existing design, branding, navigation, components, color system, layouts or working functionality.**
+
+Preserve all existing working features unless a specific improvement requires modifying them.
+
+Before making changes:
+
+1. Inspect the complete existing project and its source code.
+2. Understand the current four-role architecture.
+3. Identify all existing pages, components, features, interactions, API integrations and data structures.
+4. Identify features that already exist, features that partially work and features that are missing.
+5. Create an internal implementation checklist.
+6. Reuse existing components and functionality wherever possible.
+7. Implement missing features and repair incomplete features.
+8. Test actual functionality instead of merely adding visual representations.
+
+Do not create duplicate pages or duplicate features.
+
+If an existing feature is already implemented correctly, preserve it and improve it only where necessary.
+
+If a feature requires a backend, database, authentication or external integration, implement the actual architecture where possible. If credentials or external configuration are unavailable, clearly identify the remaining setup rather than displaying a fake working interface.
+
+The application must remain a coherent, integrated ClearPath AI product.
+
+---
+
+# PART 1 — PRODUCT VISION
+
+ClearPath AI is a digital support and intervention-navigation platform addressing substance-use problems, recovery, prevention, education and community-level action.
+
+Its central purpose is to help people:
+
+- Understand substance-use problems.
+- Recognize when they may need support.
+- Access appropriate evidence-informed interventions.
+- Connect with qualified professionals.
+- Involve trusted supporters when appropriate.
+- Maintain continuity between professional appointments.
+- Rebuild meaningful aspects of everyday life.
+- Help communities improve prevention and support programmes.
+
+ClearPath AI is NOT a substitute for doctors, psychiatrists, psychologists, therapists, de-addiction centres or emergency services.
+
+It must complement professional care.
+
+The platform must prioritize actual user needs, useful interventions and access to human support rather than maximizing app engagement.
+
+The four existing roles are:
+
+1. RECOVER & REBUILD — Primary role.
+2. SUPPORT SOMEONE — Family member, friend or trusted supporter.
+3. UNDERSTAND — Education and learning.
+4. COMMUNITY & PROFESSIONALS — Qualified professionals, programme organizers and community builders.
+
+All four must be functional and well developed.
+
+# PART 2 — ROLE ONE: RECOVER & REBUILD
+
+## Priority: Highest
+
+This is the most important role in the entire application.
+
+Its users are people who are concerned about their substance use, are experiencing substance-related difficulties, are receiving treatment, or are rebuilding their lives.
+
+Design this experience around the individual, not around a generic daily dashboard.
+
+The user should be able to choose their preferred support options and move through the application at their own pace.
+
+## A. Initial onboarding and understanding the user
+
+Create a structured, accessible onboarding experience.
+
+Do not overwhelm users with a large questionnaire on the first screen.
+
+Use short sections with a progress indicator, save-and-resume functionality and clear explanations.
+
+Collect only information necessary for the selected service.
+
+Possible information categories:
+
+- Age range.
+- Preferred language.
+- General reason for seeking support.
+- Whether the user is currently receiving professional care.
+- Whether they have access to a therapist or counsellor.
+- What kind of assistance they are looking for.
+- Their preferred support methods.
+- Whether they want to involve a trusted person.
+- Their preferred communication and reminder settings.
+
+Provide options such as:
+
+- I want to understand my situation.
+- I want to change my current behaviour.
+- I am already receiving treatment.
+- I am rebuilding my life after treatment.
+- I am supporting an ongoing recovery journey.
+- I am not sure what I need.
+
+Include an optional free-text response for users whose situation is not represented by the choices.
+
+Allow users to skip nonessential questions.
+
+Do not infer a diagnosis from onboarding responses.
+
+## B. Scientific screening and assessment
+
+Create a dedicated section called "Understand My Situation".
+
+The screening experience must be evidence-informed and must distinguish between screening, clinical assessment and diagnosis.
+
+Requirements:
+
+1. Use validated screening instruments appropriate to the user's age and circumstances.
+2. For adolescents aged 12–21, investigate the CRAFFT 2.1 self-administered questionnaire.
+3. Obtain and comply with the instrument's reproduction and usage permissions before integrating its exact questions.
+4. Do not invent questions and present them as CRAFFT questions.
+5. For other age groups, present an appropriately selected, validated instrument only when its intended population, language and permissions are established.
+6. Never invent a screening score or clinical interpretation.
+7. Show the purpose of the screening before it begins.
+8. Make answering voluntary.
+9. Explain that the result is not a diagnosis.
+10. Provide an option to discuss the result with a qualified professional.
+
+The screening experience should support:
+
+- Substance-use concerns.
+- Impact on everyday functioning.
+- Difficulties with control.
+- Situations in which the user feels they need help.
+- Existing professional support.
+- Safety-related concerns.
+
+Use validated instruments for actual clinical screening. Other questions must be clearly labelled as supplementary user-context questions.
+
+### Flexible response mechanism
+
+Every relevant questionnaire must include:
+
+- The available predefined options.
+- An "Other" option.
+- An optional free-text explanation.
+- "I'm not sure."
+- "I prefer not to answer."
+
+If the user cannot identify their situation in the predefined options, allow them to explain it in their own words.
+
+The system must not force an inaccurate answer.
+
+AI can summarize the user's description for review, but must not automatically turn it into a medical diagnosis.
+
+### Results screen
+
+After completing a screening or context questionnaire, provide:
+
+- A clear explanation of what the screening can and cannot establish.
+- A summary of the answers.
+- Relevant areas the user may want to discuss with a professional.
+- Appropriate next-step options.
+- A link to the report-generation feature.
+- An option to share with a therapist, only with explicit consent.
+
+Never display alarming labels such as "severely addicted" based on an unverified questionnaire.
+
+## C. User-controlled intervention centre
+
+Create a major section called "My Support Pathways".
+
+This must be a working collection of different support approaches.
+
+The user should choose which approach they want to explore. Do not force everyone into the same recovery programme.
+
+Include the following modules.
+
+### 1. Cognitive Behavioural Therapy (CBT) support
+
+Create structured CBT-inspired educational and self-reflection activities.
+
+Possible activities:
+
+- Understanding connections between situations, thoughts, emotions and behaviours.
+- Identifying personal triggers.
+- Recognizing unhelpful thinking patterns.
+- Developing alternative coping responses.
+- Problem-solving exercises.
+- Planning for difficult situations.
+- Reflecting on setbacks without judgment.
+- Identifying supportive actions.
+
+Every exercise should have:
+
+1. A clear objective.
+2. A short explanation.
+3. Step-by-step instructions.
+4. Interactive questions.
+5. An optional written response.
+6. A save function.
+7. A progress history.
+8. An option to share the result with a therapist.
+
+Use structured educational exercises, not claims that the app is delivering clinical CBT.
+
+If a therapist has assigned an exercise, distinguish it from general app activities and display the therapist's instructions.
+
+### 2. Motivational Interviewing-inspired conversations
+
+Create an optional guided conversation called "Explore My Motivation".
+
+The user must be able to start, pause or exit it.
+
+The conversation should:
+
+- Explore what matters to the person.
+- Understand their own reasons for wanting change.
+- Explore uncertainty without judgment.
+- Help identify personal strengths.
+- Explore perceived barriers.
+- Allow the person to express their own priorities.
+- Help them identify a personally meaningful next step.
+
+Use open-ended questions and reflective summaries.
+
+Do not pressure the user, lecture them or dictate their goals.
+
+Do not present AI conversations as professional motivational interviewing sessions.
+
+Offer the user control over how much they share.
+
+### 3. Coping skills and emotional support
+
+Create a practical library of safe, evidence-informed educational resources.
+
+Possible categories:
+
+- Managing difficult emotions.
+- Stress management.
+- Healthy communication.
+- Problem-solving.
+- Managing difficult social situations.
+- Relaxation and grounding exercises.
+- Building supportive routines.
+- Seeking help.
+
+Each activity must explain what it is intended to support.
+
+Do not promise that a breathing exercise or meditation can treat substance dependence.
+
+### 4. Family and relationship support
+
+Provide resources for understanding communication, rebuilding trust, setting healthy boundaries and seeking family support.
+
+Include optional activities that users can share with a trusted supporter.
+
+Do not encourage users to confront someone in an unsafe situation.
+
+### 5. Community Reinforcement and rebuilding life
+
+Create a major module called "Rebuild My Life".
+
+It must address meaningful everyday functioning, not simply streaks.
+
+Include optional pathways for:
+
+- Education and learning.
+- Employment and vocational development.
+- Healthy recreation.
+- Supportive relationships.
+- Meaningful daily activities.
+- Personal goals.
+- Family connections.
+- Community participation.
+- Confidence and independent functioning.
+
+Create a flexible weekly planning system.
+
+Allow users to choose their own goals, record completed activities and reflect on progress.
+
+Do not equate productivity with recovery.
+
+Avoid rigid schedules and unrealistic expectations.
+
+### 6. Peer and community support
+
+Create a section that connects users with appropriate, moderated support opportunities.
+
+Include:
+
+- Verified support groups.
+- Educational community events.
+- Peer-support programmes.
+- Professional-led group sessions.
+- Community activities.
+
+Use moderation, privacy controls and reporting mechanisms.
+
+Do not create an unmoderated space where users exchange harmful substance-related instructions or encourage one another to use substances.
+
+Do not expose personal recovery information publicly.
+
+### 7. Medical treatment and professional care
+
+Create a dedicated medical-support navigation section.
+
+Explain that different substance-use problems require different forms of professional assessment and treatment.
+
+Include:
+
+- Find professional help.
+- Find verified de-addiction services.
+- Prepare for a medical appointment.
+- Record questions to ask a clinician.
+- Track appointments.
+- Store clinician-provided care instructions where appropriate.
+- Understand the difference between medical treatment and general self-help.
+
+Never recommend medication, dosage, withdrawal management or detoxification plans.
+
+Never tell a person to stop a substance abruptly without medical guidance.
+
+For potentially dangerous withdrawal symptoms or immediate medical danger, provide clear instructions to seek urgent professional or emergency assistance.
+
+# PART 3 — GET MY REPORT
+
+This is a major feature, not a decorative download button.
+
+Create a working feature named:
+
+"GET MY REPORT"
+
+Its purpose is to reduce the effort required for a person to explain their circumstances repeatedly to a therapist.
+
+## A. Information included in the report
+
+With the user's permission, compile relevant information from:
+
+- Completed screening questionnaires.
+- User-provided context.
+- Their selected support pathways.
+- Saved CBT-inspired exercises.
+- Their personal goals.
+- Weekly reflections.
+- Their recovery-support calendar.
+- Completed and pending therapist-assigned activities.
+- Appointment history.
+- Questions they want to discuss with their therapist.
+
+Do not automatically include every private conversation.
+
+The user must be able to preview and select what goes into the report.
+
+## B. Report structure
+
+Generate a clean, professional, readable PDF containing:
+
+1. Report title.
+2. Report generation date.
+3. User-selected identification information.
+4. Reason for seeking support.
+5. User-provided background.
+6. Screening instrument name, version, date and actual result, if properly authorized.
+7. Important responses and areas of concern.
+8. Selected support activities.
+9. Weekly progress overview.
+10. Goals and reflections.
+11. Therapist-assigned activities and completion status.
+12. Questions the user wants to discuss.
+13. Important notes and safety-related information when appropriate.
+14. Clear statement that this is a user-generated support summary, not a medical diagnosis.
+
+Display dates and information clearly.
+
+Do not fabricate missing data or fill gaps with AI assumptions.
+
+Clearly mark unanswered fields.
+
+## C. Report delivery options
+
+Provide these functional actions:
+
+- Download PDF.
+- Preview report.
+- Generate updated report.
+- Select a date range.
+- Select which sections to include.
+- Share securely with an authorized therapist.
+- Revoke future sharing access where supported.
+
+Do not send reports automatically.
+
+Never email sensitive reports to an address without the user's explicit confirmation.
+
+## D. Therapist-sharing workflow
+
+Implement a secure workflow:
+
+1. User selects "Share with my therapist".
+2. User selects an already authorized therapist or sends an invitation.
+3. The application displays the exact report and information being shared.
+4. User explicitly approves the sharing.
+5. The backend securely transfers the selected report.
+6. Therapist receives an authorized notification.
+7. User can see whether the report was delivered and accessed.
+8. User can revoke future access where technically supported.
+
+Do not expose reports through publicly accessible URLs.
+
+Use authenticated, permission-controlled access.
+
+# PART 4 — THERAPIST PORTAL AND CONTINUOUS SUPPORT
+
+Create a properly integrated therapist experience.
+
+A therapist must have a separate, authenticated professional account.
+
+Professional access must not be granted merely because someone selects a therapist role.
+
+Include appropriate professional verification and administrative approval.
+
+## A. Therapist dashboard
+
+Include:
+
+- Assigned clients.
+- Pending invitations.
+- Reports awaiting review.
+- Recent client-submitted updates.
+- Upcoming appointments.
+- Therapist-assigned activities.
+- Weekly progress submissions.
+- Important follow-up reminders.
+
+A therapist must only access clients who have explicitly authorized the relationship and access.
+
+## B. Client journey management
+
+A therapist should be able to:
+
+- Review authorized user reports.
+- View selected screening results.
+- Review submitted weekly progress.
+- View relevant CBT exercise reflections.
+- Assign educational exercises.
+- Assign personalized goals.
+- Create a weekly activity plan.
+- Add appointment notes.
+- Provide feedback.
+- Request an updated report.
+- Adjust assignments.
+- Mark activities as reviewed.
+
+Every assignment must include:
+
+- Assignment title.
+- Instructions.
+- Start date.
+- Due date, if applicable.
+- Completion status.
+- Optional therapist feedback.
+
+The client must be able to see the assigned activities clearly.
+
+## C. Weekly progress submission
+
+Build a real weekly reporting mechanism.
+
+Allow users to submit:
+
+- Activities completed.
+- Goals worked on.
+- Difficulties encountered.
+- What helped them.
+- What they want to discuss.
+- Questions for their therapist.
+- Optional reflections.
+
+The therapist should see these entries in chronological order.
+
+Include a calendar view and a weekly summary view.
+
+Allow the user to submit an updated report weekly, or at another interval agreed with their therapist.
+
+The therapist should be able to respond within the portal.
+
+## D. Therapist-client communication
+
+If technically supported, provide secure messaging between an authorized therapist and client.
+
+Include:
+
+- Message history.
+- Notifications.
+- Read status.
+- Attachment controls where appropriate.
+- Clear communication boundaries.
+
+Display that messages are not an emergency service and may not receive an immediate response.
+
+If real-time messaging cannot be securely implemented, provide a secure asynchronous message or update-submission mechanism instead.
+
+Do not simulate professional availability.
+
+## E. Therapist workflow and permissions
+
+Enforce role-based access control.
+
+A therapist must never automatically receive all the user's information.
+
+The user must understand and control what is shared, subject to applicable safeguarding and legal requirements.
+
+Keep an audit record of access, report sharing and changes to permissions.
+
+# PART 5 — ROLE TWO: SUPPORT SOMEONE
+
+This role is for a family member, friend, guardian or trusted person who wants to help someone experiencing substance-related difficulties.
+
+It must be almost as carefully developed as Recover & Rebuild.
+
+Its purpose is not to make the supporter a therapist.
+
+Its purpose is to help them respond safely, understand the situation, support access to professional help and maintain healthy relationships.
+
+## A. Supporter onboarding
+
+Ask:
+
+- Who are you supporting?
+- What is your relationship?
+- Are they aware that you are seeking information?
+- Are they receiving professional help?
+- What is your main concern?
+- What kind of support do you want to provide?
+
+Include flexible free-text options.
+
+Do not require the person being supported to have a ClearPath account.
+
+## B. Understanding the situation
+
+Provide educational guidance on:
+
+- What substance-use problems can involve.
+- How to recognize possible warning signs without assuming a diagnosis.
+- Why stigma and judgment can make help-seeking difficult.
+- Why repeated arguments and threats may be unhelpful.
+- Why professional assessment matters.
+- How to recognize situations requiring urgent help.
+
+Do not encourage surveillance, unauthorized monitoring or forced disclosure of private information.
+
+## C. Guided supporter conversation
+
+Create an interactive module:
+
+"How Can I Help?"
+
+It should provide structured guidance for:
+
+- Starting a supportive conversation.
+- Listening without immediate judgment.
+- Expressing concern constructively.
+- Understanding what the person wants.
+- Encouraging professional help.
+- Respecting boundaries.
+- Handling disagreements.
+- Seeking support for oneself.
+
+Provide realistic, non-graphic scenario-based learning.
+
+Let users choose situations and explore constructive responses.
+
+## D. Support action planner
+
+Allow the supporter to create a practical plan.
+
+Examples of plan categories:
+
+- Preparing a supportive conversation.
+- Finding professional services.
+- Helping arrange an appointment.
+- Understanding treatment options through qualified sources.
+- Identifying appropriate trusted adults.
+- Supporting educational or social reintegration.
+- Taking care of their own emotional well-being.
+
+Include reminders and a progress checklist.
+
+## E. Professional support and referral
+
+Provide a verified service directory.
+
+Allow the supporter to find appropriate counsellors, de-addiction centres and other relevant services.
+
+Include a mechanism to prepare questions for professionals.
+
+Do not promise that a supporter can manage a severe substance-use disorder alone.
+
+## F. Shared support journey
+
+If the person receiving support chooses to participate, allow them to authorize limited sharing.
+
+The supported person should control which information is shared.
+
+Possible shared information:
+
+- Agreed goals.
+- Support activities.
+- Appointment information.
+- General progress updates.
+- Tasks where assistance is requested.
+
+Do not expose screening results, personal reflections or therapy notes without explicit permission.
+
+## G. Family and supporter learning
+
+Include:
+
+- Family education.
+- Healthy boundaries.
+- Communication.
+- Stress management for supporters.
+- Family-based professional treatment information.
+- Guidance on avoiding blame and stigma.
+- Supporter well-being.
+
+Provide a separate section explaining that supporters may also need professional help.
+
+# PART 6 — ROLE THREE: UNDERSTAND
+
+This role is for anyone who wants to learn about substance use, addiction science, prevention, recovery and related issues.
+
+It is an educational experience.
+
+Do not make it dependent on participation in Recover & Rebuild or Support Someone.
+
+Create an organized educational knowledge centre.
+
+## A. Learning categories
+
+Include:
+
+1. Understanding substance use and addiction.
+2. Brain reward and learning mechanisms.
+3. Biological and psychological factors.
+4. Social and environmental influences.
+5. Risk factors and protective factors.
+6. Early recognition and prevention.
+7. Effects on individuals and families.
+8. Different forms of professional treatment.
+9. Evidence-based recovery approaches.
+10. Recovery and social reintegration.
+11. Myths versus scientific evidence.
+12. Substance-related public health issues in Kerala and India.
+
+## B. Interactive learning
+
+Include:
+
+- Structured learning modules.
+- Short quizzes.
+- Scenario-based learning.
+- Myth-versus-fact activities.
+- Knowledge assessments.
+- Learning progress.
+- Searchable educational resources.
+
+Quizzes should test understanding, not diagnose the learner.
+
+Provide explanations for correct answers.
+
+## C. Scientific knowledge standards
+
+Every medical or scientific educational article must have:
+
+- A clear title.
+- A readable explanation.
+- Source organization or authors.
+- Publication date where available.
+- References.
+- A distinction between established evidence and emerging research.
+
+Prioritize WHO, UNODC, Indian government health agencies, peer-reviewed research and reputable academic institutions.
+
+Avoid unverified statistics and sensational claims.
+
+## D. Kerala-specific knowledge centre
+
+Build a dedicated Kerala section.
+
+Include verified information about:
+
+- State prevention initiatives.
+- Government de-addiction services.
+- Relevant helplines.
+- Educational programmes.
+- Community initiatives.
+- Available treatment pathways.
+- Verified public health statistics.
+
+Do not invent local services, phone numbers or statistics.
+
+Store source URLs and last-verified dates.
+
+# PART 7 — ROLE FOUR: COMMUNITY & PROFESSIONALS
+
+This role is for verified professionals, programme organizers, schools, colleges, NGOs, community organizations and authorized administrators.
+
+Its purpose is to improve prevention coordination, service discovery, programme management and understanding of community-level gaps.
+
+## A. Professional and organization onboarding
+
+Collect:
+
+- Organization name.
+- Organization category.
+- Professional role.
+- Contact information.
+- Location.
+- Verification documents where necessary.
+- Intended use of the platform.
+
+Create different permissions for:
+
+- Healthcare professionals.
+- Programme organizers.
+- Educational institutions.
+- Community organizations.
+- Platform administrators.
+
+Do not give every role access to personal health information.
+
+## B. Programme management
+
+Allow authorized organizations to:
+
+- Create programmes.
+- Publish awareness activities.
+- Publish prevention initiatives.
+- Publish educational events.
+- Publish professional training.
+- Publish community support activities.
+- Update programme details.
+- Manage registration.
+- Track participation.
+- Publish verified outcomes.
+
+Each programme should contain:
+
+- Title.
+- Description.
+- Objective.
+- Target audience.
+- Location or online format.
+- Date and time.
+- Organizer.
+- Eligibility.
+- Registration details.
+- Contact information.
+- Verification status.
+
+Include programme search and filters.
+
+## C. Programme discovery
+
+Users should be able to discover relevant verified programmes by:
+
+- Location.
+- Programme type.
+- Target group.
+- Date.
+- Organization.
+- Availability.
+
+Show clear information about the organizer and programme status.
+
+## D. Community needs and gap analysis
+
+Build a community intelligence dashboard.
+
+The objective is to help authorized organizations understand where services and programmes may be insufficient.
+
+Possible indicators:
+
+- Number of published programmes.
+- Programme coverage by district.
+- Categories of programmes available.
+- Participation numbers.
+- Programme completion.
+- User-reported accessibility barriers.
+- Unmet support requests.
+- Availability of verified services.
+
+Where reliable data exists, allow comparisons between districts and time periods.
+
+Never claim that a district has more addiction simply because it has more reported service requests.
+
+Clearly distinguish:
+
+- Actual verified service data.
+- Anonymous user-reported information.
+- Survey results.
+- Estimated figures.
+- Missing information.
+
+Do not expose identifiable user health information.
+
+Use aggregated and sufficiently anonymized statistics.
+
+## E. Programme effectiveness
+
+Allow organizers to evaluate their initiatives.
+
+Provide optional:
+
+- Pre-programme knowledge assessment.
+- Post-programme knowledge assessment.
+- Participation data.
+- Feedback.
+- Programme completion.
+- Outcome reports.
+
+Avoid treating attendance as proof of prevention effectiveness.
+
+## F. Professional collaboration
+
+Provide a way for verified organizations and professionals to collaborate.
+
+Possible features:
+
+- Referral partnerships.
+- Programme collaboration.
+- Community event coordination.
+- Resource sharing.
+- Professional announcements.
+- Verified support-service listings.
+
+Require appropriate approval and permissions.
+
+# PART 8 — AI FUNCTIONALITY
+
+AI must serve specific, useful functions throughout ClearPath.
+
+Do not add AI merely for marketing.
+
+## AI in Recover & Rebuild
+
+AI can:
+
+- Summarize user-selected information.
+- Explain educational material.
+- Help users organize reflections.
+- Generate a draft support summary.
+- Explain available support options.
+- Help prepare questions for a therapist.
+- Organize weekly progress reports.
+
+AI cannot:
+
+- Diagnose substance-use disorders.
+- Prescribe medication.
+- Provide detox instructions.
+- Replace a therapist.
+- Claim to deliver professional therapy.
+- Independently determine a person's clinical risk.
+- Make unsupported predictions about relapse.
+
+## AI in Support Someone
+
+AI can:
+
+- Explain supportive communication techniques.
+- Help prepare conversation outlines.
+- Explain how to find appropriate professional support.
+- Summarize educational resources.
+- Help supporters organize their own action plans.
+
+## AI in Understand
+
+AI can:
+
+- Explain scientific concepts.
+- Answer educational questions using verified knowledge.
+- Generate learning explanations.
+- Help learners understand research.
+- Provide references for factual claims.
+
+## AI in Community & Professionals
+
+AI can:
+
+- Summarize aggregated programme data.
+- Identify missing data.
+- Help organizations organize programmes.
+- Generate draft community reports.
+- Highlight possible service-coverage gaps.
+
+AI-generated findings must be labelled as suggestions until verified.
+
+# PART 9 — SAFETY, PRIVACY AND TRUST
+
+This is a health-related application. Privacy and safety are core product requirements.
+
+Implement:
+
+1. Secure authentication.
+2. Role-based access control.
+3. Encrypted communication and data transmission.
+4. Secure storage of sensitive information.
+5. Consent management.
+6. Data minimization.
+7. Account deletion and data export where applicable.
+8. Audit logs for professional access.
+9. Secure report-sharing permissions.
+10. Appropriate session management.
+
+Use a secure backend. Never place secret API keys in frontend code.
+
+For younger users, implement age-appropriate safeguarding and applicable Indian legal requirements.
+
+Do not assume parental or supporter access to a young person's confidential health information is automatically authorized.
+
+Explain confidentiality limitations clearly.
+
+Provide a clear route to qualified human assistance when a situation exceeds the application's capabilities.
+
+Do not allow AI to handle emergency situations as if it were a clinician.
+
+# PART 10 — DESIGN AND USER EXPERIENCE
+
+Preserve the existing ClearPath AI visual identity.
+
+Do not redesign everything unnecessarily.
+
+Improve usability while maintaining consistency.
+
+Requirements:
+
+- Responsive desktop and mobile design.
+- Accessible typography.
+- Clear navigation.
+- Consistent components.
+- Intuitive onboarding.
+- Functional progress indicators.
+- Proper loading and error states.
+- Empty-state guidance.
+- Confirmation before sensitive actions.
+- Clear consent screens.
+- Save-and-resume functionality where appropriate.
+- Appropriate accessibility support.
+
+Avoid overwhelming users with too many features on one screen.
+
+Each role should have its own meaningful dashboard and navigation.
+
+The primary Recover & Rebuild experience should prioritize the user's next useful action, access to professional support and relevant recovery resources.
+
+# PART 11 — TECHNICAL IMPLEMENTATION
+
+Inspect the existing technology stack before making technical changes.
+
+Preserve the current framework and working architecture wherever possible.
+
+Do not introduce unnecessary libraries or rewrite the entire project.
+
+Implement and verify:
+
+- Persistent data storage.
+- Authentication.
+- User roles and permissions.
+- Therapist-client relationships.
+- Secure report generation.
+- PDF download.
+- Secure sharing.
+- Weekly progress records.
+- Calendar functionality.
+- Programme management.
+- Search and filtering.
+- AI API integration.
+- Error handling.
+- Input validation.
+- Data access policies.
+
+Use appropriate database structures for:
+
+- User profiles.
+- Consent records.
+- Screening sessions.
+- User-selected support activities.
+- Personal goals.
+- Weekly reflections.
+- Therapist assignments.
+- Therapist-client relationships.
+- Reports.
+- Appointments.
+- Messages.
+- Programmes.
+- Organizations.
+- Aggregated programme statistics.
+
+Do not store sensitive information unnecessarily.
+
+Do not use mock data as if it were actual user data.
+
+If a backend feature cannot be implemented in the current environment, build the appropriate interface and document precisely what backend work and configuration are still required.
+
+# PART 12 — IMPLEMENTATION AND TESTING INSTRUCTIONS
+
+Do not stop after creating the visual interfaces.
+
+For every feature, verify the complete user journey.
+
+Test the following:
+
+1. A new user entering Recover & Rebuild.
+2. A user completing an optional screening.
+3. A user selecting "Other" and entering a free-text explanation.
+4. A user generating a report.
+5. A user selecting report sections.
+6. A user downloading the PDF.
+7. A user sharing a report with an authorized therapist.
+8. A therapist reviewing an authorized report.
+9. A therapist assigning an activity.
+10. A user submitting weekly progress.
+11. A supporter creating an action plan.
+12. A learner completing an educational quiz.
+13. An organization publishing a programme.
+14. An administrator verifying an organization.
+15. An organization viewing aggregated programme data.
+16. Unauthorized access attempts.
+17. Revoked sharing permissions.
+18. Missing data and API failures.
+19. Mobile and desktop layouts.
+
+Verify that buttons, forms, filters, navigation, reports, permissions and data-saving operations actually work.
+
+Do not use nonfunctional buttons, fabricated reports or pretend AI responses.
+
+# FINAL EXECUTION REQUIREMENTS
+
+Work directly on the existing ClearPath AI project.
+
+Implement the improvements incrementally and preserve the working application.
+
+Prioritize in this order:
+
+1. Recover & Rebuild, including screening, user-selected interventions, Get My Report and therapist integration.
+2. Support Someone.
+3. Understand.
+4. Community & Professionals.
+5. Cross-platform safety, privacy and technical testing.
+
+However, do not neglect the other three roles while working on the first.
+
+Before finishing, provide an implementation report containing:
+
+- Existing features preserved.
+- Existing features improved.
+- New features implemented.
+- Features that remain incomplete.
+- Backend integrations completed.
+- External credentials or permissions still required.
+- Security and privacy checks performed.
+- Testing performed and results.
+- Any limitations.
+
+**The final objective is not to make ClearPath AI look more advanced. It is to make ClearPath AI genuinely more useful, scientifically grounded, safe, connected to human care and functionally complete.**

@@ -1,0 +1,376 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    color: #0f172a;
+    background-color: #f8fafc;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Manrope', 'Plus Jakarta Sans', system-ui, sans-serif;
+    letter-spacing: -0.022em;
+    line-height: 1.25;
+    text-wrap: balance;
+  }
+
+  h1 {
+    letter-spacing: -0.028em;
+    line-height: 1.15;
+  }
+
+  h2 {
+    letter-spacing: -0.022em;
+    line-height: 1.24;
+  }
+
+  h3 {
+    letter-spacing: -0.015em;
+    line-height: 1.32;
+  }
+}
+
+.font-mono-tabular {
+  font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Hide scrollbars cleanly where horizontal chips overflow */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Custom calm scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+@keyframes clearpathFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-tab-fade,
+.animate-in.fade-in {
+  animation: clearpathFadeIn 280ms cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-tab-fade,
+  .animate-in.fade-in {
+    animation: none;
+  }
+}
+
+/* Day Mode (Default) & Night / Dark Mode */
+html.dark-mode {
+  color-scheme: dark;
+}
+
+html.dark-mode body {
+  background-color: #090d16;
+  color: #f1f5f9;
+}
+
+/* Primary Page & Card Surfaces */
+html.dark-mode .bg-\[\#F8FAFC\],
+html.dark-mode .bg-\[\#FFFBF5\],
+html.dark-mode .bg-slate-50,
+html.dark-mode .bg-slate-50\/80,
+html.dark-mode .bg-slate-50\/70,
+html.dark-mode .bg-slate-50\/60,
+html.dark-mode .bg-slate-50\/50 {
+  background-color: #0f1623 !important;
+}
+
+html.dark-mode .bg-white,
+html.dark-mode .bg-white\/95,
+html.dark-mode .bg-white\/90 {
+  background-color: #131c2e !important;
+}
+
+html.dark-mode .bg-slate-100,
+html.dark-mode .bg-slate-100\/80 {
+  background-color: #1b263b !important;
+}
+
+/* Soft Tinted Info Cards in Dark Mode */
+html.dark-mode .bg-indigo-50,
+html.dark-mode .bg-indigo-50\/70,
+html.dark-mode .bg-indigo-50\/60 {
+  background-color: rgba(49, 46, 129, 0.28) !important;
+}
+
+html.dark-mode .bg-sky-50,
+html.dark-mode .bg-sky-50\/80,
+html.dark-mode .bg-sky-50\/70,
+html.dark-mode .bg-sky-50\/60,
+html.dark-mode .bg-sky-50\/40,
+html.dark-mode .bg-blue-50 {
+  background-color: rgba(30, 58, 138, 0.28) !important;
+}
+
+html.dark-mode .bg-sky-100,
+html.dark-mode .bg-sky-100\/70,
+html.dark-mode .bg-indigo-100 {
+  background-color: rgba(37, 99, 235, 0.26) !important;
+}
+
+html.dark-mode .bg-amber-50,
+html.dark-mode .bg-amber-50\/80,
+html.dark-mode .bg-amber-50\/70,
+html.dark-mode .bg-amber-50\/60,
+html.dark-mode .bg-amber-50\/50,
+html.dark-mode .bg-orange-50,
+html.dark-mode .bg-orange-50\/70,
+html.dark-mode .bg-orange-100 {
+  background-color: rgba(120, 53, 15, 0.28) !important;
+}
+
+html.dark-mode .bg-teal-50,
+html.dark-mode .bg-teal-50\/75,
+html.dark-mode .bg-teal-50\/70,
+html.dark-mode .bg-teal-100,
+html.dark-mode .bg-emerald-50,
+html.dark-mode .bg-emerald-50\/80,
+html.dark-mode .bg-emerald-50\/70,
+html.dark-mode .bg-emerald-50\/60,
+html.dark-mode .bg-emerald-100 {
+  background-color: rgba(6, 78, 59, 0.28) !important;
+}
+
+html.dark-mode .bg-rose-50,
+html.dark-mode .bg-rose-50\/60,
+html.dark-mode .bg-rose-100 {
+  background-color: rgba(136, 19, 55, 0.28) !important;
+}
+
+/* Crisp Borders */
+html.dark-mode .border-slate-100,
+html.dark-mode .border-slate-200,
+html.dark-mode .border-slate-200\/80,
+html.dark-mode .border-slate-200\/70,
+html.dark-mode .border-slate-200\/60,
+html.dark-mode .border-slate-300 {
+  border-color: #25334a !important;
+}
+
+html.dark-mode .border-indigo-100,
+html.dark-mode .border-indigo-200,
+html.dark-mode .border-blue-100,
+html.dark-mode .border-blue-200,
+html.dark-mode .border-blue-200\/80 {
+  border-color: #2c4373 !important;
+}
+
+html.dark-mode .border-amber-100,
+html.dark-mode .border-amber-200,
+html.dark-mode .border-amber-200\/60,
+html.dark-mode .border-orange-200 {
+  border-color: #6b3f1d !important;
+}
+
+html.dark-mode .border-teal-200,
+html.dark-mode .border-teal-200\/80,
+html.dark-mode .border-emerald-100,
+html.dark-mode .border-emerald-200 {
+  border-color: #1d5749 !important;
+}
+
+html.dark-mode .border-rose-100,
+html.dark-mode .border-rose-200,
+html.dark-mode .border-rose-300 {
+  border-color: #6e263c !important;
+}
+
+/* Readable Typography in Night Mode */
+html.dark-mode .text-slate-900,
+html.dark-mode .text-slate-950,
+html.dark-mode .text-indigo-950,
+html.dark-mode .text-blue-950,
+html.dark-mode .text-teal-950,
+html.dark-mode .text-amber-950,
+html.dark-mode .text-emerald-950,
+html.dark-mode .text-rose-950 {
+  color: #f8fafc !important;
+}
+
+html.dark-mode .text-slate-800,
+html.dark-mode .text-slate-700,
+html.dark-mode .text-indigo-900,
+html.dark-mode .text-blue-900,
+html.dark-mode .text-teal-900,
+html.dark-mode .text-amber-900,
+html.dark-mode .text-emerald-900,
+html.dark-mode .text-rose-900 {
+  color: #e2e8f0 !important;
+}
+
+html.dark-mode .text-slate-600,
+html.dark-mode .text-slate-500,
+html.dark-mode .text-slate-400 {
+  color: #94a3b8 !important;
+}
+
+html.dark-mode .text-indigo-800,
+html.dark-mode .text-indigo-700 {
+  color: #a5b4fc !important;
+}
+
+html.dark-mode .text-blue-800,
+html.dark-mode .text-blue-700 {
+  color: #7dd3fc !important;
+}
+
+html.dark-mode .text-amber-800,
+html.dark-mode .text-amber-700,
+html.dark-mode .text-amber-600,
+html.dark-mode .text-orange-800 {
+  color: #fbbf24 !important;
+}
+
+html.dark-mode .text-teal-800,
+html.dark-mode .text-teal-700,
+html.dark-mode .text-emerald-800,
+html.dark-mode .text-emerald-700 {
+  color: #5eead4 !important;
+}
+
+html.dark-mode .text-rose-800,
+html.dark-mode .text-rose-700,
+html.dark-mode .text-rose-600 {
+  color: #fda4af !important;
+}
+
+/* Preserve dark ink on bright solid CTA buttons */
+html.dark-mode .bg-amber-400,
+html.dark-mode .bg-amber-500,
+html.dark-mode .bg-sky-400 {
+  color: #0f172a !important;
+}
+
+html.dark-mode .bg-amber-400 *,
+html.dark-mode .bg-amber-500 *,
+html.dark-mode .bg-sky-400 * {
+  color: #0f172a !important;
+}
+
+/* Inputs, Selects & Scrollbar */
+html.dark-mode input,
+html.dark-mode textarea,
+html.dark-mode select {
+  background-color: #0f172a !important;
+  color: #f1f5f9 !important;
+  border-color: #334155 !important;
+}
+
+html.dark-mode input::placeholder,
+html.dark-mode textarea::placeholder {
+  color: #64748b !important;
+}
+
+html.dark-mode ::-webkit-scrollbar-thumb {
+  background: #334155;
+}
+html.dark-mode ::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
+
+/* Editorial & Educational Reading Typography */
+.prose-readable {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  font-size: 1.03125rem; /* 16.5px comfortable reading size */
+  line-height: 1.82;
+  letter-spacing: -0.004em;
+  text-wrap: pretty;
+}
+
+.prose-readable-lg {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  font-size: 1.15625rem; /* 18.5px enlarged reader mode */
+  line-height: 1.88;
+  letter-spacing: -0.002em;
+  text-wrap: pretty;
+}
+
+.prose-readable-sm {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  font-size: 0.95rem; /* ~15.2px secondary reading copy */
+  line-height: 1.75;
+  letter-spacing: -0.003em;
+  text-wrap: pretty;
+}
+
+.prose-measure {
+  max-width: 68ch;
+}
+
+.editorial-kicker {
+  font-family: 'Manrope', 'Plus Jakarta Sans', system-ui, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.editorial-subtitle {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  font-size: 0.96875rem;
+  line-height: 1.68;
+  letter-spacing: -0.003em;
+}
+
+@media print {
+  header,
+  nav,
+  aside,
+  footer,
+  .print\:hidden {
+    display: none !important;
+  }
+
+  body,
+  main {
+    background: #ffffff !important;
+    color: #0f172a !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .report-print-surface {
+    border: none !important;
+    box-shadow: none !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}
+
+

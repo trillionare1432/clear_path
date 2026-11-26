@@ -1,0 +1,6 @@
+{
+  "name": "AAROHAN",
+  "description": "A calm, role-adaptive digital support platform for personal recovery, early help-seeking, and life rebuilding.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

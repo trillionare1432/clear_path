@@ -1,0 +1,952 @@
+# CLEARPATH AI — ADVANCED CLINICAL WORKSPACE, SUBSTANCE INTELLIGENCE AND ADAPTIVE SUPPORT UPGRADE
+
+## NON-NEGOTIABLE: MODIFY THE EXISTING PROJECT
+
+You are continuing development of my existing ClearPath AI application.
+
+This is an incremental upgrade, NOT a new project.
+
+Inspect the current source code, application structure, database, authentication, navigation and existing implementation before making modifications.
+
+Preserve the existing design system, visual identity, four public roles and all working features.
+
+Do not rebuild the existing application or duplicate its functionality.
+
+Your task is to integrate the following architecture into the existing product.
+
+The objective is to make ClearPath a personalized support-navigation and care-coordination platform, with secure collaboration between users and qualified professionals.
+
+Do not create an overwhelming application. All advanced functionality should remain organized behind simple, understandable interfaces.
+
+# 1. FINAL APPLICATION ARCHITECTURE
+
+Keep the four existing public roles:
+
+1. Recover & Rebuild.
+2. Support Someone.
+3. Understand.
+4. Community & Professionals.
+
+Create a separate, restricted Clinical Workspace for verified therapists and healthcare professionals.
+
+IMPORTANT:
+
+Do not add a fifth public role card to the main landing page.
+
+Instead, create a separate "Professional Access" entry on the appropriate sign-in or account interface.
+
+Professionals must have a separate dashboard, permissions and navigation.
+
+Create these internally separated access types:
+
+- General user.
+- Supporter.
+- Learner.
+- Community or organization member.
+- Verified clinical professional.
+- Platform administrator.
+
+Do not automatically transfer permissions between these account types.
+
+A person who organizes a community programme must not receive access to individual recovery records simply because they are an organization member.
+
+# 2. PROFESSIONAL ONBOARDING AND VERIFICATION
+
+Build an actual professional registration and verification process.
+
+## Registration
+
+Create a dedicated professional registration interface containing:
+
+- Full professional name.
+- Email address.
+- Contact information.
+- Professional category.
+- Qualifications.
+- Relevant registration or licence number, where applicable.
+- Professional institution or organization.
+- Area of practice.
+- Location.
+- Supporting verification documents where necessary.
+
+Professional categories may include:
+
+- Psychiatrist.
+- Clinical psychologist.
+- Medical practitioner.
+- Psychiatric social worker.
+- Qualified counsellor.
+- Other appropriately qualified treatment professional.
+
+Do not treat every category as having identical qualification or registration requirements.
+
+## Verification workflow
+
+Implement the following statuses:
+
+- Registration incomplete.
+- Submitted.
+- Pending verification.
+- Verification approved.
+- Verification rejected.
+- Suspended.
+
+An authorized administrator must verify the relevant qualifications, credentials and institutional information.
+
+Do not allow AI alone to approve clinical credentials.
+
+A pending account must not be able to access any user health information.
+
+Display the verification status and next steps.
+
+Do not represent an unverified person as a verified therapist.
+
+# 3. THERAPIST-USER CONNECTION SYSTEM
+
+Implement TWO invitation workflows.
+
+## Workflow A: Therapist invites a user
+
+1. Verified therapist opens their dashboard.
+2. Selects "Invite a Client".
+3. Enters the intended recipient's contact information.
+4. Selects the purpose of the invitation.
+5. Generates a secure, time-limited invitation.
+6. User receives an invitation.
+7. User logs into or registers for ClearPath.
+8. User reviews the therapist's verified identity.
+9. User reviews requested access permissions.
+10. User accepts or rejects the connection.
+
+## Workflow B: User invites a therapist
+
+1. User enters Recover & Rebuild.
+2. Opens "My Professional Support".
+3. Selects "Connect My Therapist".
+4. Searches the verified professional directory or invites an existing therapist.
+5. Therapist receives the invitation.
+6. Therapist authenticates their professional account.
+7. Therapist accepts.
+8. User authorizes the required information-sharing permissions.
+9. The care relationship becomes active.
+
+The therapist must not receive access simply because an invitation was sent.
+
+Both parties must complete the required acceptance steps.
+
+Implement invitation expiration, cancellation and secure verification.
+
+Never expose whether an unrelated person has a ClearPath account through a public search.
+
+# 4. USER-CONTROLLED DATA PERMISSIONS
+
+This is a critical system.
+
+Develop a dedicated "Manage My Data Sharing" screen inside Recover & Rebuild.
+
+When connecting a therapist, display individual permissions.
+
+Possible permission categories:
+
+- User-provided background.
+- Substance concern records.
+- Screening results.
+- Selected screening responses.
+- Recovery-support goals.
+- Weekly progress reports.
+- Selected CBT-inspired exercise reflections.
+- Therapist-assigned activity completion.
+- Appointment information.
+- User-selected attachments.
+
+Allow users to choose individual categories.
+
+Also provide:
+
+- One-time report sharing.
+- Time-limited continuing access.
+- Permission to receive weekly updates.
+- Permission to view selected activities.
+- Permission to send and receive feedback.
+
+Before granting access, display an understandable preview of what the therapist will see.
+
+Record:
+
+- Who gave permission.
+- Who received permission.
+- What information was shared.
+- Why it was shared.
+- When it was authorized.
+- When access expires.
+- Whether permission was revoked.
+
+Build a simple permission-management interface.
+
+The user must be able to revoke future access.
+
+Revocation must immediately prevent further access through ClearPath, subject to legitimate record-retention and safeguarding requirements.
+
+Explain that revocation cannot necessarily delete copies previously downloaded by another person.
+
+# 5. CENTRAL SUBSTANCE IDENTIFICATION SYSTEM
+
+Implement a structured, searchable, multi-select substance catalogue in Recover & Rebuild.
+
+This must become part of the actual user-information collection process.
+
+Do not use a generic free-text-only question.
+
+## A. Primary substance catalogue — 25 selectable entries
+
+Create the following options:
+
+1. Alcohol.
+2. Tobacco and nicotine products.
+3. Cannabis.
+4. Heroin.
+5. Opium.
+6. Prescription opioid pain medicines.
+7. Other opioids.
+8. Cocaine.
+9. Amphetamine-type stimulants.
+10. Methamphetamine.
+11. MDMA-type substances.
+12. Sedatives and tranquillizers.
+13. Sleeping medicines.
+14. Barbiturate medicines.
+15. Prescription stimulant medicines.
+16. Inhalants and volatile substances.
+17. Nitrous oxide.
+18. Hallucinogens.
+19. Dissociative substances.
+20. Synthetic cannabinoids.
+21. Synthetic cathinones.
+22. Cough and cold medicines.
+23. Pregabalin, gabapentin and related medicines.
+24. Anabolic-androgenic steroids and performance-enhancing substances.
+25. Multiple or unknown substances.
+
+Display these as organized, accessible options.
+
+Do not display all 25 in a visually overwhelming paragraph.
+
+Group related choices into expandable categories while retaining easy selection.
+
+## B. Expanded catalogue — another 25 entries
+
+Create an expandable section named "More substances and medicines".
+
+Include:
+
+26. Morphine.
+27. Codeine.
+28. Tramadol.
+29. Fentanyl and related synthetic opioids.
+30. Methadone.
+31. Buprenorphine.
+32. Oxycodone.
+33. Hydrocodone.
+34. Alprazolam.
+35. Diazepam.
+36. Clonazepam.
+37. Lorazepam.
+38. Zolpidem and related sleeping medicines.
+39. Phenobarbital.
+40. Methylphenidate.
+41. Prescription amphetamine medicines.
+42. LSD.
+43. Psilocybin-containing substances.
+44. Ketamine.
+45. PCP.
+46. Dextromethorphan.
+47. GHB and related substances.
+48. Synthetic cannabinoid substances.
+49. Synthetic cathinone substances.
+50. Other novel psychoactive substances.
+
+Some entries are specific examples of their parent categories. Maintain correct category relationships and avoid duplicating them as separate unrelated substances.
+
+These are clinical identification options only.
+
+Do not turn this catalogue into a public discovery directory or provide instructions about obtaining, preparing or using substances.
+
+Medications can have legitimate medical purposes. Never infer substance misuse simply from the presence of a medication name.
+
+## C. Multiple selection
+
+Users must be able to select more than one concern.
+
+Allow them to:
+
+- Search the catalogue.
+- Select multiple categories.
+- Remove selections.
+- Change an entry.
+- Indicate that they are unsure.
+- Identify a possible unknown substance.
+
+Store each selection as a separate structured record.
+
+## D. Custom substance entry
+
+Create an option named "Other / I don't know".
+
+Provide a text input:
+
+"Describe the substance as you know it."
+
+Allow an optional additional explanation.
+
+After entry:
+
+1. Preserve the original text exactly as user-provided data.
+2. Compare the text against a curated and versioned clinical substance reference catalogue.
+3. Check available recognized generic names and clinically verified synonyms.
+4. If a confident match exists, propose the matching category.
+5. Ask the user to confirm whether the match is correct.
+6. If no reliable match exists, preserve the custom description with status "Unverified".
+7. Permit qualified professionals to review the entry.
+8. Never invent a substance identity.
+
+AI must not generate fictional chemical classifications, unsupported medical explanations or dangerous substance-related instructions.
+
+Do not make the user feel that their response is invalid simply because the substance is not in the predefined list.
+
+## E. Prescription distinction
+
+For medication-related entries, ask:
+
+- Was this prescribed by a healthcare professional?
+- Are you concerned about taking it as prescribed, taking it differently from the directions, or an unwanted effect?
+- Are you currently discussing this medication with a healthcare professional?
+
+Options must include "Not sure" and "Prefer not to answer".
+
+Do not make clinical assumptions from these answers.
+
+# 6. STRUCTURED INTAKE AND QUESTION BANK
+
+Develop a dynamic but carefully controlled intake system.
+
+Do not ask every question at once.
+
+Use progressive disclosure: ask only questions relevant to the user's situation.
+
+## Stage 1: Understand their primary concern
+
+Ask:
+
+"What would you like help with today?"
+
+Options:
+
+- I am concerned about my substance use.
+- I want help understanding my situation.
+- I want to find professional support.
+- I already have a therapist.
+- I want help from a trusted person.
+- I want to find community support.
+- I want to rebuild my daily life.
+- I am not sure what I need.
+
+Allow multiple relevant preferences where appropriate.
+
+## Stage 2: Substance information
+
+Display the 50-entry catalogue and custom-entry mechanism.
+
+Ask whether the user is concerned about one or multiple substances.
+
+## Stage 3: Understand the user's circumstances
+
+Create optional, relevant questions:
+
+- What is your main concern?
+- What kind of difficulty are you experiencing?
+- Are you currently receiving professional assistance?
+- Do you have access to a therapist?
+- Do you have a trusted person who could support you?
+- Would you like to involve that person?
+- What kind of assistance would be most useful?
+
+Every suitable question should include:
+
+- Predefined responses.
+- Other.
+- Not sure.
+- Prefer not to answer.
+- Optional text explanation.
+
+Do not force a user to fit their situation into a predefined response.
+
+## Stage 4: Validated screening
+
+Use only appropriately authorized and validated instruments.
+
+For adolescents, investigate CRAFFT 2.1 and the relevant versions and permissions.
+
+For other populations, select suitable validated instruments with clinical review.
+
+WHO ASSIST can inform substance classification and screening architecture where appropriate.
+
+Preserve the exact instrument version, approved questions, scoring and intended population.
+
+Do not invent a diagnostic questionnaire or present generic AI-created questions as validated clinical screening.
+
+Do not use scores to diagnose users.
+
+Provide the results with an appropriate explanation of limitations and possible professional next steps.
+
+# 7. ADAPTIVE SUPPORT NAVIGATION ENGINE
+
+Create a major functional component called:
+
+"ClearPath Support Navigation"
+
+This is a central innovation of the application.
+
+It should use the information the user has voluntarily provided, their selected preferences, validated screening information where available and predefined safety rules.
+
+It must not claim to perform clinical diagnosis or autonomous medical triage.
+
+## A. Immediate safety gateway
+
+Before suggesting ordinary self-guided activities, include a brief and clearly explained emergency-safety check.
+
+Ask whether anyone is currently in immediate medical danger.
+
+If the person reports serious breathing difficulty, unconsciousness, seizures, suspected poisoning or another medical emergency:
+
+- Stop ordinary recovery recommendations.
+- Display immediate emergency instructions.
+- Direct the person to emergency medical assistance.
+- Display the applicable emergency contact.
+- Encourage involvement of a trusted adult when appropriate and safe.
+- Do not make the user complete more questionnaires before displaying the emergency guidance.
+
+The application must never attempt to manage an emergency through a chatbot.
+
+## B. Support preference identification
+
+For non-emergency circumstances, help users choose an appropriate next step.
+
+Possible paths:
+
+1. Immediate professional assessment.
+2. Connect with an existing therapist.
+3. Find a verified professional.
+4. Involve a trusted family member or friend.
+5. Join a verified, moderated support programme.
+6. Explore evidence-informed self-guided educational activities.
+7. Rebuild daily routines and meaningful activities.
+8. Learn more before deciding.
+9. Not sure — help me understand my options.
+
+These paths may be combined.
+
+## C. Support pathway selection rules
+
+Create predefined routing rules.
+
+Examples:
+
+- Existing therapist + wants continuity: offer report preparation and authorized therapist connection.
+- Wants professional care: offer the verified professional directory.
+- Wants family involvement: offer Support Someone connection with consent.
+- Wants community support: offer verified, moderated programmes.
+- Wants daily-life rebuilding: offer appropriate routine and CBT-inspired educational exercises.
+- Not sure: explain the available options in simple language.
+- Possible medical urgency: prioritize clinical assessment and emergency assistance as applicable.
+
+A preference for self-guided activities must not override safety guidance or a need for professional evaluation.
+
+Never generate unsupported severity labels or relapse predictions.
+
+Explain why an option is being displayed and let users choose between clinically appropriate alternatives.
+
+# 8. PERSONALIZED SUPPORT PLAN
+
+After the user selects their preferred pathway, create a structured support plan.
+
+Each plan must contain:
+
+- User-selected objectives.
+- Selected support approaches.
+- Relevant educational activities.
+- Professional assistance information when required.
+- User-defined activities.
+- Optional supporter involvement.
+- Next steps.
+- Review date.
+
+Do not create rigid or identical plans for every person.
+
+Allow the user to modify, pause or discontinue optional self-guided activities.
+
+If a therapist has authorized a care plan, clearly distinguish that clinician-assigned plan from application-generated educational suggestions.
+
+## Include these support approaches
+
+### CBT-inspired educational activities
+
+- Thought and emotion reflection.
+- Identifying difficult situations.
+- Coping-skills education.
+- Problem-solving exercises.
+- Alternative-response planning.
+- Setback reflection.
+
+### Motivational exploration
+
+- Personal reasons for change.
+- Personal values.
+- Uncertainty.
+- Strengths.
+- Barriers.
+- User-selected next steps.
+
+Use a nonjudgmental, user-controlled conversation.
+
+Do not claim to provide clinical CBT or professional motivational interviewing.
+
+### Community reinforcement and rebuilding
+
+- Education.
+- Meaningful recreation.
+- Relationships.
+- Vocational development.
+- Personal goals.
+- Community participation.
+- Healthy routines.
+
+### Peer and family support
+
+Provide access to appropriately moderated and verified options.
+
+### Professional treatment navigation
+
+Allow users to find relevant professionals, treatment centres and approved support services.
+
+Do not provide medication recommendations, clinical detoxification instructions or withdrawal management plans.
+
+# 9. CLINICAL WORKSPACE — THERAPIST DASHBOARD
+
+Build a professional workspace with its own authenticated navigation.
+
+It should be simple and functional.
+
+## A. Dashboard
+
+Display:
+
+- Connected clients.
+- Pending invitations.
+- New report submissions.
+- Reports awaiting review.
+- Weekly updates.
+- Upcoming appointments.
+- Pending activity feedback.
+- Follow-up reminders.
+
+Show minimum necessary information in dashboard summaries.
+
+Do not place private user responses on a public-facing or organization-wide dashboard.
+
+## B. Individual client workspace
+
+When a therapist selects an authorized client, display:
+
+1. User-authorized profile.
+2. Relevant substance concern records.
+3. Selected assessment results.
+4. Shared reports.
+5. Weekly progress history.
+6. Goals.
+7. Assigned activities.
+8. Submitted reflections.
+9. Appointment information.
+10. Therapist feedback.
+
+The therapist must only access categories covered by the current permission grants.
+
+## C. Therapist assignments
+
+Allow therapists to create an activity for an authorized client.
+
+Each assignment must contain:
+
+- Title.
+- Purpose.
+- Instructions.
+- Start date.
+- Optional due date.
+- Review date.
+- Status.
+- Feedback.
+
+The user receives a clear notification and can review the assignment.
+
+The user must be able to submit a response or indicate that the activity was not completed.
+
+Do not penalize or shame the user for incomplete activities.
+
+## D. Weekly progress management
+
+Allow therapists to see weekly user-submitted updates in chronological order.
+
+Build:
+
+- Calendar view.
+- Weekly timeline.
+- Report history.
+- Activity-completion overview.
+- User reflections.
+- Therapist feedback.
+
+Create a useful comparison of changes across reporting periods without inventing clinical conclusions.
+
+## E. Appointment preparation
+
+Allow therapists and users to record:
+
+- Upcoming appointment.
+- Appointment date.
+- Topics to discuss.
+- Questions.
+- Previous appointment follow-up.
+- Agreed next steps.
+
+## F. Secure communication
+
+For the initial version, prioritize asynchronous, secure updates and therapist feedback.
+
+Do not attempt complex real-time video consultation or unrestricted chat unless its security and operational requirements can genuinely be met.
+
+Every message or response must be associated with an authorized care relationship.
+
+Display that messages are not an emergency service.
+
+# 10. GET MY REPORT — IMPROVED INTEGRATION
+
+Integrate the existing Get My Report feature with the new architecture.
+
+The report must be generated from structured, user-authorized records.
+
+Include, where selected:
+
+- User-provided background.
+- Substance concern records.
+- Custom substance descriptions.
+- Confirmation and verification status of substance entries.
+- Authorized screening results.
+- User-selected support preferences.
+- Personal goals.
+- Weekly reflections.
+- Completed or incomplete activities.
+- Therapist assignments.
+- Appointment questions.
+- Relevant feedback.
+- Reporting period.
+
+Every field must have its source and date.
+
+Clearly distinguish:
+
+- User-entered information.
+- Validated screening information.
+- Clinician-entered information.
+- AI-generated summaries.
+
+AI summaries must be clearly marked as drafts.
+
+Never manufacture missing information, diagnose the individual or make unverified predictions.
+
+## Report actions
+
+Implement:
+
+- Preview.
+- Select reporting period.
+- Include or remove sections.
+- Download PDF.
+- Share with authorized therapist.
+- Generate updated report.
+- View previous reports.
+
+Reports must have versions and generation dates.
+
+When a report is shared, create a record of the exact version and data categories shared.
+
+Do not automatically include private chat histories.
+
+# 11. SUPPORT SOMEONE INTEGRATION
+
+Extend the substance and support architecture to Role Two.
+
+A supporter should be able to learn about a concern and obtain constructive guidance without requiring unrestricted access to another person's personal records.
+
+Allow the supporter to:
+
+- Explain their concern.
+- Describe their relationship.
+- Select the kind of support they want to provide.
+- Search verified professional services.
+- Prepare a supportive conversation.
+- Create their own action plan.
+- Learn about family support.
+- Find moderated community programmes.
+
+If the person being supported joins ClearPath, permit a consent-based connection.
+
+The supported person must control which information is shared, subject to applicable safeguarding and legal requirements.
+
+Do not allow supporters to view the person's assessments, private reflections or therapist communications automatically.
+
+# 12. BACKEND AND DATABASE ARCHITECTURE
+
+Inspect the existing backend before choosing or modifying technologies.
+
+Reuse the current architecture wherever possible.
+
+Do not create unnecessary new databases.
+
+Implement appropriate persistent structures for:
+
+- User accounts.
+- User profiles.
+- Role assignments.
+- Professional profiles.
+- Professional verification requests.
+- Therapist-client relationships.
+- Invitations.
+- Permission grants.
+- Permission history.
+- Substance catalogue.
+- User substance concerns.
+- Intake sessions.
+- Assessment sessions.
+- Assessment responses.
+- Support preferences.
+- Recovery goals.
+- Weekly progress.
+- Activity assignments.
+- Therapist feedback.
+- Reports and report versions.
+- Appointments.
+- Verified service directory.
+- Audit events.
+
+Sensitive information must not rely on local browser storage as its only persistence mechanism.
+
+Use authenticated backend operations and strict row-level or equivalent access policies.
+
+API keys and privileged operations must remain server-side.
+
+Test permissions at the database and API level, not just by hiding interface elements.
+
+# 13. SECURITY, PRIVACY AND AGE-AWARE SAFEGUARDING
+
+This platform handles sensitive personal information.
+
+Implement:
+
+- Data minimization.
+- Clear consent notices.
+- Purpose-specific access.
+- Secure authentication.
+- Encrypted transmission.
+- Secure storage.
+- Access audit logs.
+- Permission expiration.
+- Revocation.
+- Account and data-management workflows.
+- Secure file storage.
+- Appropriate data-retention rules.
+
+Design for applicable Indian data-protection law, including the Digital Personal Data Protection Act, 2023 and Rules, 2025, with qualified legal review of the provisions and commencement applicable to deployment.
+
+Because the platform may be used by minors:
+
+- Implement age-aware onboarding.
+- Obtain and manage legally required permissions.
+- Provide appropriate safeguarding pathways.
+- Do not make blanket confidentiality promises.
+- Do not automatically expose every minor's personal reflections to a parent or supporter.
+- Do not permit professional access without the applicable authorization.
+- Document confidentiality limitations and safeguarding exceptions.
+
+Do not collect real clinical records during demonstrations without appropriate governance and security approval.
+
+# 14. VERIFIED KERALA AND INDIA SUPPORT SERVICES
+
+Integrate a maintainable support-resource directory.
+
+Investigate and verify services such as:
+
+- Kerala Mayangilla Keralam and its treatment-centre network.
+- National de-addiction support services.
+- Qualified clinical services.
+- Appropriate mental-health support.
+- Emergency medical assistance.
+
+Possible official reference contacts to verify before deployment:
+
+- 112 — India emergency assistance.
+- 14405 — Kerala Mayangilla Keralam helpline.
+- 14446 — National de-addiction helpline.
+- 14416 — Tele-MANAS mental-health support.
+
+Make clear that the services have different purposes.
+
+Store:
+
+- Organization.
+- Verified contact.
+- Service type.
+- Location.
+- Hours.
+- Official source URL.
+- Last-verified date.
+- Verification status.
+
+Do not rely on permanently hardcoded information that may become outdated.
+
+An administrator should be able to update and verify service information.
+
+# 15. KEEP THE USER EXPERIENCE SIMPLE
+
+The additional architecture must not make the existing application difficult to understand.
+
+Preserve the four main entry points.
+
+Within Recover & Rebuild, keep the primary journey organized into understandable sections:
+
+- My Situation.
+- My Support Pathways.
+- My Recovery Journey.
+- My Reports.
+- My Professional Support.
+
+Do not display all advanced functions on one screen.
+
+Use expandable sections, progressive onboarding and simple language.
+
+The Clinical Workspace should have separate professional navigation.
+
+The therapist must not have to navigate the public four-role experience to manage clients.
+
+# 16. TESTING AND IMPLEMENTATION ORDER
+
+Implement the feature set in a controlled sequence.
+
+### Phase A — Foundation
+
+- Audit existing code.
+- Preserve current application architecture.
+- Create the necessary database structures.
+- Implement role and access permissions.
+
+### Phase B — Substance intelligence
+
+- Implement the 50 catalogue options.
+- Build multi-select.
+- Build custom substance input.
+- Implement classification and verification statuses.
+- Integrate substance records with the intake and report systems.
+
+### Phase C — Adaptive support
+
+- Build structured onboarding.
+- Build the safety gateway.
+- Build preference identification.
+- Implement support-routing rules.
+- Integrate the support pathways.
+
+### Phase D — Professional access
+
+- Build professional registration.
+- Implement credential verification.
+- Build invitations in both directions.
+- Implement user consent and access permissions.
+
+### Phase E — Reports and continuing care
+
+- Connect structured data to Get My Report.
+- Implement secure PDF generation.
+- Build therapist review.
+- Implement assignments.
+- Build weekly updates and feedback.
+
+### Phase F — Validation
+
+Test the following complete journeys:
+
+1. A new user completing onboarding.
+2. A user selecting multiple substance concerns.
+3. A user entering a custom substance.
+4. An uncertain substance being marked unverified.
+5. A user choosing a professional support pathway.
+6. A user choosing a self-guided pathway when appropriate.
+7. An emergency scenario reaching the safety guidance before ordinary activities.
+8. A therapist submitting registration.
+9. An administrator verifying a therapist.
+10. A therapist inviting a user.
+11. A user inviting their therapist.
+12. A user denying an invitation.
+13. A user authorizing only selected information.
+14. A user generating a report.
+15. A therapist reviewing an authorized report.
+16. A therapist assigning an activity.
+17. A user submitting a weekly update.
+18. A user revoking therapist access.
+19. An unauthorized professional attempting to access a report.
+20. An organization member attempting to access private health records.
+
+Verify all database operations, permission boundaries, UI interactions and error handling.
+
+Use synthetic data for demonstrations and testing.
+
+# 17. WHAT NOT TO BUILD
+
+To prevent unnecessary complexity, do not add these to the initial implementation:
+
+- AI diagnosis.
+- AI-generated clinical severity scores.
+- Automatic relapse predictions.
+- Prescription or dosage management.
+- Detoxification instructions.
+- Unrestricted patient searches.
+- Public recovery profiles.
+- Unmoderated substance-related discussions.
+- A full hospital-management system.
+- Complex video-therapy infrastructure.
+- Unnecessary payment systems.
+
+These are outside the core purpose of this upgrade.
+
+# FINAL DEFINITION OF SUCCESS
+
+ClearPath AI should now support a complete, coherent journey:
+
+A person enters Recover & Rebuild.
+
+They explain their situation and identify the substance or substances they are concerned about.
+
+The system understands their stated preferences, checks immediate safety and presents appropriate support pathways.
+
+The person chooses the assistance they want.
+
+Where professional care is needed or desired, ClearPath helps connect them with a verified professional.
+
+The user controls which information is shared.
+
+The therapist can review the authorized information, provide feedback, assign appropriate activities and follow the person's submitted progress.
+
+ClearPath helps organize the journey between professional appointments and supports meaningful everyday rebuilding.
+
+The other three public roles continue operating independently and effectively.
+
+The platform's defining innovation is its ability to connect personal needs, evidence-informed support, verified human assistance and continuing care through one coherent and user-controlled system.
+
+**Do not merely create these screens. Implement and test their actual functionality in my existing ClearPath AI application.**
